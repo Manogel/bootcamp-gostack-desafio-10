@@ -5,9 +5,10 @@ export const Container = styled.div`
   padding: 30px 0;
 
   header {
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 0 160px;
+    padding: 0 20px 160px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,6 +36,16 @@ export const Container = styled.div`
             background: #41c900;
             border-radius: 0 8px 8px 0;
             margin: 0 auto;
+          }
+
+          @media (max-width: 700px) {
+            .text {
+              display: none;
+            }
+
+            .icon {
+              border-radius: 8px;
+            }
           }
         }
       }

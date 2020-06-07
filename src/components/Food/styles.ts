@@ -8,6 +8,9 @@ export const Container = styled.div<IFoodPlateProps>`
   background: #f0f0f5;
   border-radius: 8px;
 
+  display: flex;
+  flex-direction: column;
+
   header {
     background: #ffb84d;
     border-radius: 8px 8px 0px 0px;
@@ -23,6 +26,8 @@ export const Container = styled.div<IFoodPlateProps>`
       `};
 
     img {
+      width: 100%;
+      height: 100%;
       pointer-events: none;
       user-select: none;
     }
@@ -31,17 +36,22 @@ export const Container = styled.div<IFoodPlateProps>`
   section.body {
     padding: 30px;
 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
     h2 {
       color: #3d3d4d;
     }
 
     p {
       color: #3d3d4d;
-
+      font-size: 16px;
       margin-top: 16px;
     }
 
     .price {
+      margin-top: auto;
       font-style: normal;
       font-size: 24px;
       line-height: 34px;
